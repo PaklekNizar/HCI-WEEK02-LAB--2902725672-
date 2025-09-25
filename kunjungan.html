@@ -3,74 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <title>Budaya, Wisata, &amp; Transportasi di Yogyakarta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-  <nav>
+<header>
+  <h1>Budaya, Wisata, &amp; Transportasi</h1>
+  <nav aria-label="Navigasi utama">
     <a href="index.html">Beranda</a> |
     <a href="sejarah.html">Sejarah</a> |
     <a href="kunjungan.html">Budaya &amp; Wisata</a>
   </nav>
+</header>
 
-  <hr>
+<main>
+  <section aria-labelledby="budaya">
+    <h2 id="budaya">Budaya &amp; Pengakuan Dunia</h2>
+    <article>
+      <p>
+        Yogyakarta adalah pusat budaya Jawa: wayang, gamelan, batik, dan tari klasik.
+        Tahun 2023, <strong>Poros Kosmologis Yogyakarta</strong> ditetapkan sebagai Warisan Dunia UNESCO.
+      </p>
+    </article>
+  </section>
 
-  <header>
-    <h1>Budaya, Wisata, &amp; Transportasi</h1>
-    <p>Panduan singkat untuk mengenal budaya dan cara berkeliling Yogyakarta.</p>
-  </header>
-
-  <main>
-    <h2>Budaya &amp; Pengakuan Dunia</h2>
-    <p>
-      Yogyakarta merupakan pusat budaya Jawa yang hidup: wayang, gamelan, batik, dan seni tari.
-      Pada 2023, <strong>Poros Kosmologis Yogyakarta dan Penanda Sejarahnya</strong> ditetapkan sebagai
-      Warisan Dunia UNESCO, yang menegaskan hubungan kosmologis antara Kraton, Tugu, dan Panggung Krapyak.
-    </p>
-
-    <h2>Destinasi Utama</h2>
+  <section aria-labelledby="destinasi">
+    <h2 id="destinasi">Destinasi Utama</h2>
     <ul>
-      <li><strong>Kraton Yogyakarta</strong> – istana dan pusat budaya.</li>
+      <li><strong>Kraton Yogyakarta</strong> – pusat budaya dan kedaton.</li>
       <li><strong>Taman Sari</strong> – kompleks pemandian bersejarah.</li>
-      <li><strong>Jalan Malioboro</strong> – koridor belanja dan pejalan kaki.</li>
-      <li><strong>Candi Prambanan &amp; Borobudur</strong> – destinasi dekat yang mudah diakses dari kota.</li>
+      <li><strong>Jalan Malioboro</strong> – koridor pejalan kaki & belanja.</li>
+      <li><strong>Candi Prambanan &amp; Borobudur</strong> – destinasi dekat dari kota.</li>
     </ul>
 
     <figure>
-      <img src="img/prambanan.jpg" alt="Candi Prambanan dekat Yogyakarta" width="450">
+      <img src="prambanan_yogya.jpg" alt="Kompleks Candi Prambanan di Yogyakarta" width="450">
       <figcaption>Kompleks Candi Prambanan.</figcaption>
     </figure>
+  </section>
 
-    <h2>Transportasi</h2>
+  <!-- ===== TABLE for extra score ===== -->
+  <section aria-labelledby="tabel">
+    <h2 id="tabel">Tabel Ringkas Destinasi & Lokasi</h2>
+    <table border="1" summary="Ringkasan destinasi populer di Yogyakarta beserta lokasinya">
+      <caption>Destinasi Populer Yogyakarta</caption>
+      <thead>
+        <tr>
+          <th scope="col">Destinasi</th>
+          <th scope="col">Kategori</th>
+          <th scope="col">Kecamatan / Area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kraton Yogyakarta</td>
+          <td>Budaya/Sejarah</td>
+          <td>Kraton</td>
+        </tr>
+        <tr>
+          <td>Taman Sari</td>
+          <td>Sejarah</td>
+          <td>Mantrijeron</td>
+        </tr>
+        <tr>
+          <td>Jalan Malioboro</td>
+          <td>Belanja/Kuliner</td>
+          <td>Gedong Tengen</td>
+        </tr>
+        <tr>
+          <td>Candi Prambanan</td>
+          <td>Cagar Budaya</td>
+          <td>Sleman (perbatasan)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== FORM with >3 input types ===== -->
+  <section aria-labelledby="formulir">
+    <h2 id="formulir">Formulir Masukan Pengunjung</h2>
+    <p>Isi formulir ini untuk memberi masukan tentang pengalaman Anda di Yogyakarta.</p>
+
+    <!-- Tidak ada backend: action kosong, method POST untuk praktik -->
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Data Diri</legend>
+
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="nama@example.com" required><br><br>
+
+        <label for="tanggal">Tanggal Kunjungan:</label><br>
+        <input type="date" id="tanggal" name="tanggal"><br><br>
+
+        <span>Jenis Kelamin:</span><br>
+        <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+        <label><input type="radio" name="gender" value="Lainnya"> Lainnya</label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferensi Wisata</legend>
+
+        <label for="minat">Kategori Favorit:</label><br>
+        <select id="minat" name="minat">
+          <option value="budaya">Budaya/Sejarah</option>
+          <option value="alam">Alam</option>
+          <option value="kuliner">Kuliner</option>
+          <option value="belanja">Belanja</option>
+        </select><br><br>
+
+        <span>Area yang ingin dikunjungi lagi (boleh lebih dari satu):</span><br>
+        <label><input type="checkbox" name="area" value="kraton"> Kraton</label>
+        <label><input type="checkbox" name="area" value="taman-sari"> Taman Sari</label>
+        <label><input type="checkbox" name="area" value="malioboro"> Malioboro</label>
+        <label><input type="checkbox" name="area" value="prambanan"> Prambanan</label><br><br>
+
+        <label for="foto">Upload Foto Kenangan (opsional):</label><br>
+        <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+        <label for="pesan">Masukan / Saran:</label><br>
+        <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tulis pengalaman Anda di Yogyakarta..."></textarea><br><br>
+      </fieldset>
+
+      <button type="submit">Kirim</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <section aria-labelledby="transport">
+    <h2 id="transport">Transportasi</h2>
+    <article>
+      <p>
+        Udara: <strong>Yogyakarta International Airport (YIA)</strong> di Kulon Progo.
+        Kereta: <strong>Stasiun Tugu</strong> &amp; <strong>Lempuyangan</strong>.
+        Dalam kota: <strong>Trans Jogja</strong>, angkutan umum, <em>becak</em>, dan <em>andong</em>.
+      </p>
+    </article>
+  </section>
+
+  <section aria-labelledby="rujukan">
+    <h2 id="rujukan">Link Rujukan</h2>
     <p>
-      Akses udara dilayani <strong>Yogyakarta International Airport (YIA)</strong> di Kulon Progo.
-      Kereta api tersedia di <strong>Stasiun Tugu</strong> (bisnis–eksekutif) dan <strong>Lempuyangan</strong> (ekonomi).
-      Dalam kota, terdapat <strong>Trans Jogja</strong> (BRT), angkutan umum, serta moda tradisional
-      <em>becak</em> dan <em>andong</em> yang populer di koridor Malioboro.
+      <a href="https://whc.unesco.org/en/list/" target="_blank">UNESCO World Heritage List</a> ·
+      <a href="https://en.wikipedia.org/wiki/Yogyakarta" target="_blank">Wikipedia: Yogyakarta</a>
     </p>
+  </section>
+</main>
 
-    <figure>
-      <img src="prambanan_yogya.jpg" alt="Bandara Yogyakarta International Airport (YIA)" width="450">
-      <figcaption>Bandara YIA sebagai gerbang udara Yogyakarta.</figcaption>
-    </figure>
-
-    <h2>Link Rujukan</h2>
-    <p>
-      Info resmi UNESCO:
-      <a href="https://whc.unesco.org/en/list/" target="_blank">Daftar Warisan Dunia</a> (cari entri Yogyakarta).<br>
-      Artikel ringkas:
-      <a href="https://en.wikipedia.org/wiki/Yogyakarta" target="_blank">Wikipedia: Yogyakarta</a>.
-    </p>
-
-    <p>
-      Kembali ke <a href="index.html">Beranda</a> atau baca <a href="sejarah.html">Sejarah</a>.
-    </p>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p>© 2025 Informasi Yogyakarta – Materi ringkas untuk latihan HTML dasar.</p>
-  </footer>
+<footer>
+  <p>© 2025 Informasi Yogyakarta – halaman dengan struktur semantik, form, dan tabel.</p>
+</footer>
 
 </body>
 </html>

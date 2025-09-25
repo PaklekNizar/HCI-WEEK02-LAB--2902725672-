@@ -3,70 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Yogyakarta – Kota Pelajar & Budaya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-  <nav>
+<header>
+  <h1>Yogyakarta – Kota Pelajar &amp; Budaya</h1>
+  <p>Ringkasan kota Yogyakarta (Jogja) untuk tugas HTML dasar.</p>
+  <nav aria-label="Navigasi utama">
     <a href="index.html">Beranda</a> |
     <a href="sejarah.html">Sejarah</a> |
     <a href="kunjungan.html">Budaya &amp; Wisata</a>
   </nav>
+</header>
 
-  <hr>
+<main id="konten-utama">
+  <section aria-labelledby="profil">
+    <h2 id="profil">Profil Singkat</h2>
+    <article>
+      <p>
+        Yogyakarta adalah ibu kota Daerah Istimewa Yogyakarta (DIY) di selatan Pulau Jawa.
+        Kota ini dikenal sebagai <em>Kota Pelajar</em>, <em>Kota Budaya</em>, dan <em>Kota Gudeg</em>.
+        Wilayah inti ±32,82 km²; populasi kota ±375 ribu; kawasan metro &gt;4 juta jiwa.
+        Iklim monsun tropis (26–27&nbsp;°C); berada dekat Gunung Merapi.
+      </p>
+    </article>
+  </section>
 
-  <header>
-    <h1>Yogyakarta – Kota Pelajar &amp; Budaya</h1>
-    <p>
-      Yogyakarta (sering disebut Jogja) adalah ibu kota Daerah Istimewa Yogyakarta (DIY) di selatan Pulau Jawa.
-      Kota ini dikenal sebagai <em>Kota Pelajar</em>, <em>Kota Budaya</em>, dan <em>Kota Gudeg</em>.
-    </p>
-  </header>
+  <section aria-labelledby="ekonomi-pendidikan">
+    <h2 id="ekonomi-pendidikan">Ekonomi &amp; Pendidikan</h2>
+    <article>
+      <p>
+        Ekonomi ditopang sektor jasa, perdagangan, pariwisata, dan pendidikan.
+        Perguruan tinggi: UGM, UNY, UIN Sunan Kalijaga, UMY, Sanata Dharma, dan Atma Jaya.
+      </p>
+    </article>
+    <aside>
+      <p><strong>Catatan:</strong> Julukan kota: Kota Pelajar, Kota Budaya, Kota Gudeg.</p>
+    </aside>
+  </section>
 
-  <main>
-    <h2>Profil Singkat</h2>
-    <p>
-      Wilayah inti kota sekitar 32,82 km² dengan populasi kota ±375 ribu jiwa, sedangkan kawasan metropolitannya
-      menampung lebih dari empat juta penduduk. Iklimnya monsun tropis dengan suhu harian berkisar 26–27 °C.
-      Yogyakarta berada tidak jauh dari Gunung Merapi, salah satu gunung berapi paling aktif di Indonesia.
-    </p>
+  <figure>
+    <img src="monumen_yogya.jpg" alt="Tugu Pal Putih (Tugu Jogja), ikon Yogyakarta" width="450">
+    <figcaption>Tugu Pal Putih (Tugu Jogja), ikon kota.</figcaption>
+  </figure>
 
-    <h2>Fakta Cepat</h2>
-    <ul>
-      <li>Julukan: Kota Pelajar, Kota Budaya, Kota Gudeg.</li>
-      <li>Agama mayoritas: Islam; terdapat komunitas Kristen, Hindu, dan Buddha.</li>
-      <li>Indeks Pembangunan Manusia termasuk kategori sangat tinggi untuk skala nasional.</li>
-    </ul>
+  <section aria-labelledby="referensi">
+    <h2 id="referensi">Referensi Eksternal</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Yogyakarta" target="_blank">Wikipedia: Yogyakarta</a></p>
+  </section>
+</main>
 
-    <h2>Ekonomi &amp; Pendidikan</h2>
-    <p>
-      Perekonomian Yogyakarta didorong oleh sektor jasa, perdagangan, pariwisata, dan pendidikan.
-      Kehadiran perguruan tinggi seperti Universitas Gadjah Mada (UGM), Universitas Negeri Yogyakarta (UNY),
-      UIN Sunan Kalijaga, Universitas Muhammadiyah Yogyakarta (UMY), Universitas Sanata Dharma,
-      dan Universitas Atma Jaya Yogyakarta memperkuat ekosistem <strong>Kota Pelajar</strong>.
-    </p>
-
-    <figure>
-      <img src="Borobudur_yogya.jpg" alt="Suasana di Borobudur_yogya" width="450">
-      <figcaption>Ikon koridor wisata: Jalan Malioboro.</figcaption>
-    </figure>
-
-    <h2>Referensi Eksternal</h2>
-    <p>
-      Baca lebih lanjut di:
-      <a href="https://en.wikipedia.org/wiki/Yogyakarta" target="_blank">Wikipedia: Yogyakarta</a>
-    </p>
-
-    <p>
-      Lanjutkan ke halaman <a href="sejarah.html">Sejarah</a> atau
-      <a href="kunjungan.html">Budaya &amp; Wisata</a>.
-    </p>
-  </main>
-
-  <hr>
-
-  <footer>
-    <p>© 2025 Informasi Yogyakarta – Sumber konten diringkas dari Wikipedia & rangkuman tugas.</p>
-  </footer>
+<footer>
+  <nav aria-label="Navigasi bawah">
+    <a href="index.html">Beranda</a> ·
+    <a href="sejarah.html">Sejarah</a> ·
+    <a href="kunjungan.html">Budaya &amp; Wisata</a>
+  </nav>
+  <p>© 2025 Informasi Yogyakarta – situs latihan HTML semantik.</p>
+</footer>
 
 </body>
 </html>
